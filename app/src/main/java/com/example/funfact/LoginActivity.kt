@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
             if (email.toString().isNullOrEmpty() || password.toString().isNullOrEmpty()) {
                 Toast.makeText(this, "Email or Password is not provided", Toast.LENGTH_LONG).show()
             } else {
-                if (email.toString() == "zuri@gmail.com" && password.toString() == "12345"){
+                if (email.toString() == "zuri@gmail.com" && password.toString() == "123456"){
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 } else {
