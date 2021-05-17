@@ -20,14 +20,14 @@ class LoginActivity : AppCompatActivity() {
         val signinButton = findViewById<MaterialButton>(R.id.login_button)
 
         signinButton.setOnClickListener() {
-            if (email.toString().isNullOrEmpty() || password.toString().isNullOrEmpty()) {
+            if (email.text.toString().isNullOrEmpty() || password.text.toString().isNullOrEmpty()) {
                 Toast.makeText(this, "Email or Password is not provided", Toast.LENGTH_LONG).show()
             } else {
-                if (email.toString() == "zuri@gmail.com" && password.toString() == "123456"){
+                if (email.text.toString() == "zuri@gmail.com" && password.text.toString() == "zuritask"){
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 } else {
-                    Toast.makeText(this, "Wrong Email or Password", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Please use zuri@gmail.com as your email and zuritask as your password", Toast.LENGTH_LONG).show()
                 }
             }
         }
