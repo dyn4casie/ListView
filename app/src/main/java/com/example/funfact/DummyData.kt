@@ -5,7 +5,7 @@ object DummyData {
         Factmodel(
             "Kotlin",
         R.drawable.kotlin_logo,
-        "The name comes from Kotlin Island, near St. Petersburg. Andrey Breslay mentioned that the team decided to name"
+        "The name comes from Kotlin Island, near St. Petersburg. Andrey Breslay mentioned that the team decided to name it after the Island"
         ),
         Factmodel(
             "Python",
